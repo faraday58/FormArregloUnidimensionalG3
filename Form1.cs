@@ -14,7 +14,7 @@ namespace FormArregloUnidimensionalG3
 
         private void btnDefinirTamaño_Click(object sender, EventArgs e)
         {
-
+            indice = 0;
             int n = int.Parse(txtbTotalElementos.Text);
             miMatriz = new Matriz(n);
 
@@ -22,7 +22,9 @@ namespace FormArregloUnidimensionalG3
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-
+            float elemento = float.Parse(txtbElemento.Text);
+            miMatriz.Agregar(elemento, indice++);
+            lbMatriz.Text = miMatriz.ToString();
 
         }
     }
