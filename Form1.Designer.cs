@@ -36,6 +36,7 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.lbMatriz = new System.Windows.Forms.Label();
+            this.chkAleatorio = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -108,11 +109,22 @@
             this.lbMatriz.TabIndex = 0;
             this.lbMatriz.Text = "10, 8 , 12";
             // 
+            // chkAleatorio
+            // 
+            this.chkAleatorio.AutoSize = true;
+            this.chkAleatorio.Location = new System.Drawing.Point(594, 181);
+            this.chkAleatorio.Name = "chkAleatorio";
+            this.chkAleatorio.Size = new System.Drawing.Size(98, 24);
+            this.chkAleatorio.TabIndex = 3;
+            this.chkAleatorio.Text = "Aleatorio";
+            this.chkAleatorio.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 334);
+            this.ClientSize = new System.Drawing.Size(736, 334);
+            this.Controls.Add(this.chkAleatorio);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnDefinirTamaño);
             this.Controls.Add(this.txtbElemento);
@@ -138,6 +150,7 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbMatriz;
+        private System.Windows.Forms.CheckBox chkAleatorio;
     }
 }
 

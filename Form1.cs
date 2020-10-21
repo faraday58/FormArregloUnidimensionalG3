@@ -22,7 +22,17 @@ namespace FormArregloUnidimensionalG3
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            float elemento = float.Parse(txtbElemento.Text);
+            float elemento = 0;
+            if ( chkAleatorio.Checked)
+            {
+                Random aleatorio = new Random();
+                elemento=  (float)aleatorio.NextDouble()*1000;
+                               
+            }
+            else
+            {
+                elemento = float.Parse(txtbElemento.Text);               
+            }
             miMatriz.Agregar(elemento, indice++);
             lbMatriz.Text = miMatriz.ToString();
 
