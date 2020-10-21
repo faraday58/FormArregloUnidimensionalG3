@@ -78,6 +78,7 @@
             this.btnDefinirTamaño.TabIndex = 2;
             this.btnDefinirTamaño.Text = "Definir tamaño";
             this.btnDefinirTamaño.UseVisualStyleBackColor = true;
+            this.btnDefinirTamaño.Click += new System.EventHandler(this.btnDefinirTamaño_Click);
             // 
             // btnAgregar
             // 
@@ -87,6 +88,7 @@
             this.btnAgregar.TabIndex = 2;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // label3
             // 
